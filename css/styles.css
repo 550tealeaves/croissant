@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(0.25turn, #d7fcd4, #f9f1d0);
+}
+
 h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -13,7 +17,7 @@ a{
     color: crimson;
 }
 
-p{
+h3{
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
