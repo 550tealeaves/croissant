@@ -4,17 +4,14 @@ body{
 
 h1{
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.email-link{
-    text-decoration: underline;
-    color: darkviolet;
+    font-family: 'Allura', cursive;
+    font-size: 64px;
 }
 
 a{
     text-decoration: none;
-    color: crimson;
+    color: rgb(160, 29, 55);
+    font-weight: bold;
 }
 
 p{
@@ -23,10 +20,22 @@ p{
     text-align: center;
 }
 
+.email-link{
+    text-decoration: underline;
+    color: darkviolet;
+}
+
 .text-special-color{
     color: rgb(157, 37, 248);
 }
 
 .text-new-color{
-    color: rgb(5, 92, 60);
+    color: rgb(9, 103, 149);
+}
+
+@media (max-width: 900px) {
+    .option-listings{
+        display: flex;
+        justify-content: space-between;
+    }
 }
