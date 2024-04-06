@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(0.25turn, #d7fcd4, #f9f1d0);
+    /* background: linear-gradient(0.25turn, #d7fcd4, #f9f1d0); */
+    background: linear-gradient(0.25turn, #d7fcd4, #f9f1d0, #b99696);
 }
 
 h1{
@@ -30,7 +31,7 @@ p{
 }
 
 .text-new-color{
-    color: rgb(9, 103, 149);
+    color: rgb(6, 84, 123);
 }
 
 @media (max-width: 900px) {
