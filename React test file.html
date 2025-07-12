@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React testing</title>
+    <style>
+        h2{
+            color: rgb(122, 188, 245);
+            background-color: rgba(46, 43, 43, 0.959);
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 28px;
+        }
+        mark{
+            text-decoration: underline;
+            color:darkgreen;
+            font-weight: bold;
+        }
+        i{
+            color: indigo;
+            font-weight: 600;
+            border: 25px dotted rgb(110, 27, 27);
+            text-transform: capitalize;
+        }
+        p{
+            font-weight: 500;
+            color: palevioletred;
+        }
+        aside{
+            text-transform: lowercase;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>React testing to ensure comprehension</h2>
+    <form>
+        <input type="search" placeholder="What is your greeting?" id="search-bar">
+        <input type="submit">
+    </form>
+    <p>This is supposed to be the test file for the <mark>React JSX program</mark> , featured on code sandbox. Right now, I'm taking more time than usual to go through the program, but it's okay.</p>
+    <aside>Hopefully, I can finish the program by <i>Thanksgiving or the first week of December</i>🙀</aside>
+
+<script> 
+    function Hello(props) { //trying to do conditional ternary but it's not working - think it needs to be connected to React
+        return(<h3>(
+            {props.language === "French" ? "Bonjour" : props.language === "Spanish" ? "Hola" : "Hello"}
+            )
+            </h3>
+        );
+    }
+
+</script>
+</body>
+</html>

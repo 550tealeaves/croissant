@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+    <style>
+        .container{
+            color: ghostwhite;
+            background: darkblue;
+        }
+        #food-choice{
+            background: coral;
+            color: midnightblue;
+        }
+        #burger{
+            background: olivedrab;
+            border: 6px dashed purple;
+        }
+
+        table{
+            border: 4px solid fuchsia;
+        }
+
+        span{
+            color: rgb(41, 116, 51);
+            font-weight: 500;
+            text-decoration: underline;
+            border: 1px solid red;
+        }
+        form{
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            padding: 10px 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: 2px dashed rosybrown;
+            border-radius: 16px;
+            color:peachpuff;
+            font-weight: bold;
+            background: lime;
+        }
+
+        button:hover{
+            color: lime;
+            background: peachpuff;
+            cursor: pointer;
+        }
+
+        blockquote {
+            margin: 0;
+        }
+
+        blockquote p {
+            padding: 10px 70px;
+            background: #eee;
+            border-radius: 5px;
+            text-align: center;
+            color: sienna;
+        }
+
+        blockquote p::before {
+            content: '\201C';
+        }
+
+        blockquote p::after {
+            content: '\201D';
+        }
+        .quotation{
+            text-align: center;
+            color: mediumspringgreen;
+        }
+        aside {
+            width: 40%;
+            padding-left: .5rem;
+            margin-left: .5rem;
+            float: right;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #13b995;
+            background: maroon;
+        }
+
+        aside > p {
+            margin: .5rem;
+        }
+        ins {
+            text-decoration: none;
+            background-color: rgb(221, 154, 230);
+        }
+
+        nav{
+            border-bottom: 3px solid orange;
+        }
+        .cookie ol{
+            list-style-type: none;
+        }
+        .cookie{
+            display: inline-block;
+        }
+        footer{
+            font-style: italic;
+            color: deeppink;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        dd{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkslategray;
+        }
+        dd em{
+            color: firebrick;
+            text-decoration: underline;
+            font-variant: small-caps;
+        }
+
+        address{
+            color: indianred;
+            background: lightyellow;
+            font-family: fantasy;
+        }
+ 
+        details {
+            font: 18px "Open Sans", Calibri, sans-serif;
+            width: 620px;
+        }
+
+        details > summary {
+            padding: 2px 6px;
+            width: 15em;
+            background-color: #ddd;
+            border: none;
+            box-shadow: 3px 3px 4px black;
+            cursor: pointer;
+        }
+
+        details > span {
+            border-radius: 0 0 10px 10px;
+            background-color: #ddd;
+            padding: 2px 6px;
+            margin: 0;
+            box-shadow: 3px 3px 4px black;
+            font-style: italic;
+            font-weight: 500;
+            color: rgb(143, 96, 44);
+        }
+
+        details[open] > summary {
+            background-color: rgb(29, 158, 180);
+        }
+        .crazy-colors{
+            font-weight: 600;
+        }
+        dfn{
+            font-weight: 700;
+            color: rgb(75, 131, 204);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        time{
+            font-weight: bold;
+            color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                1 of 2
+            </div>
+            <div class="col">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
+<br />
+    <h1>
+        What do most people enjoy eating for lunch?
+    </h1>
+
+    <div class="container" id="food-choice">
+        <div class="row row-cols-2">
+            <div class="col">Sandwich</div>
+            <div class="col">Pizza</div>
+            <div class="col">Salad</div>
+            <div class="col">Chips</div>
+        </div>
+    </div>
+    <br />
+    <h2>
+        How do people prefer their burgers?
+    </h2>
+    <div class="container" id="burger">
+        <div class="row row-cols-3">
+            <div class="col">Just Killed</div>
+            <div class="col">Rare</div>
+            <div class="col">Medium Rare</div>
+            <div class="col">Medium Well</div>
+            <div class="col">Well Done</div>
+            <div class="col">Charred</div>
+        </div>
+    </div>
+    <br/>
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+    
+    <datalist id="ice-cream-flavors">
+        <option value="Cookies-and-Cream">
+        <option value="Coffee">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+
+    <br/>
+
+    <section>
+    <h3>
+        Social media handles of the infamous
+    </h3>
+    <form id="search-form">
+        <input type="text" id="social-media" placeholder="Favorite social media site?">
+        <button>Search handle</button>
+        <input type="datetime-local" name="" id="date">
+    </form>
+    </section>
+    <br/>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Marquis</td>
+                <td>Jacob</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Otto</td>
+                <td>von Bismarck</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>Anderson</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+<br/>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the <q>first item's</q> accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the <mark>appropriate classes</mark> that we use to <span>style each element</span>. Think of these like a <strong>pop-up book</strong>, in which the meat of it is found at the center, <em>after turning the page</em> <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+    </div> 
+    <p class="text-info d-flex justifiy-center">One of the toughest things for young black girls is <i> understanding and appreciating</i> the natural curls that sprout from their heads. Society has constantly told them that their hair was inferior to the those of white and Asisan women. Simply put, the lack of "silky", "straight" texture was an impediment that demanded a fix.</p>
+    <aside>Their hair did not meet society's standards, but, <s>"luckily, which is what everyone thinks"</s> unluckily there was a solution</aside>
+    <p>Chemically altering the hair with perms or stitching artifical <del>(sometimes it was real)</del> <ins>or natural</ins> hair to their scalp provided that <mark>"acceptable." </mark> look that allowed black women to maneuver within society, to become what was considered beautiful. If society could learn to accept different textures without hesitation and consternation, things would be C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>.</p>
+    <p>I found it funny how whenever you open an Adobe PDF file with multiple pages, a box will pop up with the following useless message:</p>
+    <p><samp>Please wait while the document is being prepared for:</samp></p>
+    <details open>
+        <summary>
+            Details
+        </summary>
+        <span>Who in Crayola thought that <span class="crazy-colors">red-orange, orange-red, yellow-green, and green-yellow</span> were good things?</span>
+    </details>
+    <figure>
+        <blockquote cite="https://http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.html">
+            <p>Four score and seven years ago our fathers brought forth, upon this continent, a new nation, conceived in liberty, and
+            dedicated to the proposition that all men are created equal
+            </p>
+        </blockquote>
+        <figcaption class="quotation">—Abraham Lincoln, <cite class="quotation">Gettysburg Address</cite></figcaption>
+    </figure>
+    <nav class="cookie">
+        <ol>
+            <li class="cookie"><a href="#">Mexican food</a></li>
+            <li class="cookie"><a href="#">Italian food</a></li>
+            <li class="cookie"><a href="#">Mediterranean food</a></li>
+            <li class="cookie"><a href="#">American food</a></li>
+        </ol>
+    </nav>
+    <br>
+    <dl>
+        <dt>Met Gala</dt>
+        <dd class="bg-dark bg-opacity-75 text-warning">
+            The Met Gala is essentially rich people playing Halloween, a famous costume party that is invite-only but then invitees pay $35,000 to actually attend. This is probably the MET's most famous annual event. Each year there is a <em>theme</em> but this year's theme, of "American", was hastily thrown together. Most of the invitees eschewed the theme in favor for see through bathing suit wraps - so many were naked. This past Monday, the MET held its annual "event", with the theme as Guilded Glamour. <em>Few</em>, if any of the invitees actually followed the theme.
+        </dd>
+    </dl>
+    <br>
+    <p>There is no more frustrating organization to deal with than the <dfn><abbr title="Metropolitan Transportation Authority">MTA</abbr></dfn>, sadly, the monopoly on public transportation in NYC. Consistently poorly managed, this "organization" always claims penury despite paying its executives millions of dollars. Consequently, they raise fares  and tolls 2<sup>2</sup> times annually to fix the "shortfall", beg Albany constantly for funding, and threaten the masses with service cuts, who can do nothing but take it on the chin. Let's not discuss the delays in the MTA. If the F train is set to arrive at <time datetime="07:20">07:20</time>, you better be prepared to wait a minimum of <time datetime="PT25M">25m</time> for it to actually arrive and maybe even longer for you to fit in.</p>
+    <address>
+        Please contact the website designer at <a href="https://www.yahoo.com" target="blank">housecarphone@yahoo.com</a>. <br>
+        If there are any technical problems with this website, please contact the designer's instructor <a href="http://www.shecodes.io" target="blank">Matt Delac</a>
+    </address>
+    <div class='tableauPlaceholder' id='viz1668023721071' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazonorders&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Amazonorders&#47;Story1' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;Amazonorders&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1668023721071');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='1014px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <footer>
+        Created by a newbie coder
+    </footer>
+    <footer>
+        <bdo dir="rtl">
+            Created by a newbie coder trying her best
+        </bdo>
+    </footer>
+<script>
+    function buttonChange(event) { //function receives an event
+        event.preventDefault(); //stop pg from reloading 
+        let socialMediaHandle = document.querySelector("h3"); //select h3 element for editing 
+        socialMediaHandle.innerHTML = ("input".value); //not working - want h3 to match value entered into form
+    }
+    
+    let formChange = document.querySelector("#search-form"); //select element w/ this id
+    formChange.addEventListener("submit", buttonChange); //add eventlistener saying when form is submitted, call function buttonChange
+
+</script>    
+</body>
+</html>
